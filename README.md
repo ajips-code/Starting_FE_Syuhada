@@ -1,6 +1,6 @@
 ## Syuhada FE Starting Move
 1. Remove package-lock.json and then Install all depedencies
-   ### npm install
+   #### npm install
    atau
    ### yarn install
 2. Install vite depedencies if haven't installed
