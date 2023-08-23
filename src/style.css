@@ -1,0 +1,84 @@
+/* Flexbox container for logo and menu */
+.logo-and-menu-container {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.logo-container {
+  margin-top: 0px;
+}
+
+/* Style for the logo */
+.text-logo-header {
+  margin-right: 3px; /* Adjust margin as needed */
+  font-weight: bold; /* Example style */
+  color: #000000;
+  font-size: 25.04px;
+  font-family: "Space Grotesk";
+}
+
+/* Style for the text-logo */
+.text-logo-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.text-logo-small {
+  font-weight: normal; /* Example style for thinner font */
+  display: block; /* Display the element as a block to move it to a new line */
+  margin-top: 45px; /* Adjust margin as needed */
+  margin-left: -110px;
+  color: #000000;
+  font-size: 25.04px;
+  font-family: "Space Grotesk";
+}
+
+/* Style adjustments for the menu */
+.site-menu {
+  margin-left: auto; /* Push menu to the right side */
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Display menu items in a row */
+  gap: 20px; /* Adjust spacing between menu items */
+}
+
+.site-menu li {
+  margin: 5px; /* Reset default margin for list items */
+}
+
+.site-menu li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Adjust link color */
+}
+
+.nav-link {
+  margin-top: 15px;
+  margin-left: 5px;
+  font-family: "Space Grotesk";
+  font-size: 20.27px;
+  font-weight: bolder;
+}
+
+.button {
+  display: inline-block;
+  padding: 0px 2px 2px 0px;
+  background-color: #436129; /* Button background color */
+  color: #fff; /* Button text color */
+  border-radius: 10px; /* Button border radius */
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #436129; /* Hover background color */
+  color: #fff; /* Hover text color */
+}
+
+.contact-text {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Space Grotesk";
+  text-decoration: none;
+  font-weight: lighter;
+  -webkit-text-fill-color: #fff;
+}

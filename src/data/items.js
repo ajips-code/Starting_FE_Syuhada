@@ -1,5 +1,5 @@
 const themeColor = '#FFFFFF'
-const siteName = 'Syuhada Apps'
+const siteName = 'Syuhada'
 const siteLogo = '/vue-js-landing-page-master/src/assets/images/logo.svg'
 
 const contactInfo = {
