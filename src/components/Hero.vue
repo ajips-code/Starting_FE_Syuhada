@@ -4,7 +4,7 @@ import { themeColor } from "../data/items";
 
 const heroHeading = "Smart Mosque, Digital Mosque, Be Inclusive.";
 const buttonSeeFeature = "See Features";
-const buttonPricing = "Pricing";
+
 </script>
 
 <template>
@@ -21,7 +21,8 @@ const buttonPricing = "Pricing";
                 {{ heroHeading }}
               </h1>
               <div class="excerpt" data-aos="fade-up" data-aos-delay="100">
-                <p>
+                <p style="
+                  margin-left: 7px; text-align: justify;">
                   Lorem ipsum dolor sit amet consectetur.
                   <span style="
                       background-color: rgba(64, 123, 255, 0.07);
@@ -38,7 +39,7 @@ const buttonPricing = "Pricing";
                   { borderColor: themeColor },
                 ]">{{ buttonSeeFeature }}</a>
                 <a href="#pricing-section" class="btn btn-outline-primary smoothscroll pricing"
-                  :style="[{ color: themeColor }, { borderColor: themeColor }]">{{ buttonPricing }}</a>
+                  :style="[{ color: themeColor }, { borderColor: themeColor }]">Download Apps</a>
               </p>
             </div>
           </div>

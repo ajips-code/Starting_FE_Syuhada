@@ -82,3 +82,8 @@
   font-weight: lighter;
   -webkit-text-fill-color: #fff;
 }
+
+.img-feature {
+    width: 400px;
+    height: 400px;
+}

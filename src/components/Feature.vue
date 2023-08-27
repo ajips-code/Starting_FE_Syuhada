@@ -1,35 +1,124 @@
 <script setup>
+import personPhoto from "../assets/images/person_1.jpg";
+import mainPhoto from "../assets/images/image_features.svg";
+import ellips1 from "../assets/images/Ellipse1.svg";
+import ellips2 from "../assets/images/Ellipse2.svg";
+import ellips3 from "../assets/images/Ellipse3.svg";
+import ellips4 from "../assets/images/Ellipse4.svg";
+
+const service1SubHeading = "Fitur Aplikasi";
+const service1Quote =
+  '"Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia."';
+const personName = "James Anderson";
+const designation = "Facebook, Product Lead";
+const imgFeature = mainPhoto;
+
 const items = [
   {
     iconBg: "background-color: #6fe7dd",
     title: "Grow Your Business",
     description:
-      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
   },
   {
     iconBg: "background-color: #ffc93c",
     title: "Build Products",
     description:
-      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
   },
   {
     iconBg: "background-color: #f73859",
     title: "Success Each Day",
     description:
-      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
   },
   {
     iconBg: "background-color: #407BFF",
     title: "Bring Ideas to Life",
     description:
-      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia",
   },
 ];
 </script>
+
 <template>
-  <div class="untree_co-section">
+  <div class="untree_co-section feature-page" id="features-section">
     <div class="container">
-      <div class="row">
+      <div class="row justify-content-between">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <img :src="imgFeature" alt="Image" class="img-fluid img-feature" />
+        </div>
+        <div class="col-lg-6 description-features">
+          <h3 class="heading mb-4" data-aos="fade-up" data-aos-delay="100">
+            {{ service1SubHeading }}
+          </h3>
+          <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="row justify-content-between features1">
+              <div class="col-lg-0">
+                <img :src="ellips1" alt="" class="img-fluid img-ellipse" />
+              </div>
+              <div class="col-lg-10">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Gravida venenatis aliquet leo elit feugiat nibh egestas purus
+                  sit.
+                </p>
+              </div>
+            </div>
+            <div class="row justify-content-between features1">
+              <div class="col-lg-0">
+                <img :src="ellips2" alt="" class="img-fluid img-ellipse" />
+              </div>
+              <div class="col-lg-10">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Gravida venenatis aliquet leo elit feugiat nibh egestas purus
+                  sit.
+                </p>
+              </div>
+            </div>
+            <div class="row justify-content-between features1">
+              <div class="col-lg-0">
+                <img :src="ellips3" alt="" class="img-fluid img-ellipse" />
+              </div>
+              <div class="col-lg-10">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Gravida venenatis aliquet leo elit feugiat nibh egestas purus
+                  sit.
+                </p>
+              </div>
+            </div>
+            <div class="row justify-content-between features1">
+              <div class="col-lg-0">
+                <img :src="ellips4" alt="" class="img-fluid img-ellipse" />
+              </div>
+              <div class="col-lg-10">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Gravida venenatis aliquet leo elit feugiat nibh egestas purus
+                  sit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="untree_co-testimonial d-flex">
+              <div class="text">
+                <blockquote>
+                  {{ service1Quote }}
+                </blockquote>
+                <div class="author d-flex">
+                  <div class="pic mr-3">
+                    <img :src="personPhoto" alt="Image" class="img-fluid" />
+                  </div>
+                  <div>
+                    <strong class="d-block">{{ personName }}</strong><span class="d-block">{{ designation }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="display: block; margin-top: 30px;">
+      <div class="row" style="text-align: justify;">
         <div
           class="col-md-6 mb-4 mb-lg-0 col-lg-3"
           data-aos="fade-up"
@@ -149,5 +238,40 @@ const items = [
         </div>
       </div>
     </div>
+    </div>
   </div>
 </template>
+
+<style>
+@import "../style.css";
+
+.feature-page {
+  background-color: #CCD591;
+}
+
+.description-features {
+  font-family: 'Space Grotesk';
+}
+
+.img-ellipse {
+  width: 35px;
+  height: 35px;
+}
+
+.service-contents p {
+  padding: 10px 10px 0px 0px;
+  text-align: left;
+}
+
+h3 {
+  margin-left: -18px;
+  color: #436129;
+  -webkit-text-fill-color: #436129;
+}
+
+p {
+  margin-left: -45px;
+  text-align: left;
+  color:#000000;  
+}
+</style>
