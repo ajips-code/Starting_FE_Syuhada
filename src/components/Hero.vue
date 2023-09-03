@@ -33,14 +33,6 @@ const buttonSeeFeature = "See Features";
                 </p>
                 <a href="#pricing-section" class="nav-link button">Download Apps</a>
               </div>
-              <p data-aos="fade-up" data-aos-delay="200">
-                <a href="#features-section" class="btn btn-primary smoothscroll" style="margin-right: 5px" :style="[
-                  { background: themeColor },
-                  { borderColor: themeColor },
-                ]">{{ buttonSeeFeature }}</a>
-                <a href="#pricing-section" class="btn btn-outline-primary smoothscroll pricing"
-                  :style="[{ color: themeColor }, { borderColor: themeColor }]">Download Apps</a>
-              </p>
             </div>
           </div>
         </div>

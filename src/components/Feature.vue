@@ -263,13 +263,13 @@ const items = [
   text-align: left;
 }
 
-h3 {
+.description-features h3 {
   margin-left: -18px;
   color: #436129;
   -webkit-text-fill-color: #436129;
 }
 
-p {
+.description-features p {
   margin-left: -45px;
   text-align: left;
   color:#000000;  
